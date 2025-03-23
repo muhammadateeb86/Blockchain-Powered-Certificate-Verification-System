@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Upload System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Certificate Upload System</h1>
+        <form id="uploadForm">
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="student_id" placeholder="Enter Student ID" required>
+            <label for="fileInput">Upload Certificate:</label>
+            <input type="file" id="fileInput" name="certificate" accept=".pdf" required>
+            <button type="submit">Upload Certificate</button>
+        </form>
+        <div id="response" class="response"></div>
+        <div id="qrcode" class="qrcode"></div>
+    </div>
+</body>
+</html>
